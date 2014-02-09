@@ -1,4 +1,21 @@
-#header {
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
+/*all css for the entire site is included in this one css file (for now),
+  will split up if it gets too huge*/
+
+/*apply to all views*/
+body { padding-top: 2em; background-color: blue;}
+
+#header1{
+	float: none;
+	margin 0 auto;
+}
+
+#header2{
+	text-align: center;
+}
+
+/*home view*/
+#whatwedo{
+	background: blue;
+	margin:0;
+  padding-top: 2em; background-color: blue;
 }
