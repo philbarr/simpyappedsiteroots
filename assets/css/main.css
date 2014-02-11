@@ -11,7 +11,16 @@
          url('/fonts/lobster_1.3-webfont.svg#lobster_1.3regular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('/fonts/sourcesanspro-regular-webfont.eot');
+    src: url('/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*apply to all views*/
@@ -19,7 +28,7 @@
 body { 
 	background-color: #4498DB;
 	padding-top: 2em;
-	
+	color: #f2f2f2;
 }
 .navbar {
     background-color: #4498DB;
@@ -27,20 +36,22 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #333;
-}
- 
+  color: #f2f2f2;
+  font-family: "source_sans_proregular", sans-serif;
+  font-weight: bold;
+	}
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
   background-color: #66AAFF;
-  color: #111;
+  color: #f2f2f2;
+  font-weight: bolder;
 }
  
 #header{
-	color: #222; 
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-
+ 
 .arrow-down {
   width: 0; 
   height: 0; 
@@ -51,13 +62,19 @@ body {
 }
 
 .centercontents{
+	float: 0;
 	margin: 0 auto;
 }
 
-#ibuild{
-	text-align: center;	
-	font-family: "lobster","museo_sans_rounded300","Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin: 2em;
+.centertext{
+  text-align: center;
+}
+
+.heading{
+	font-family: "lobster",Helvetica,Arial,sans-serif;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-size: 4em;
 }
 
 /*home view*/ 
@@ -67,6 +84,29 @@ body {
   padding-top: 2em;
 }
 
-#other{
-	background-image:url('/img/green_cup.png');
+#ibuild{
+  color: #f2f2f2; 
+}
+
+.devtype{
+	font-family: "source_sans_proregular", sans-serif;
+	margin: 0.3em;
+	font-size: x-large;
+  margin-bottom: 1em;
+}
+
+#process{
+	background-image:url('/img/fresh_snow.png');
+	color: #222;
+}
+
+.theprocess{
+	padding: 0; margin:0;
+	color: #222;
+}
+
+.processitems{
+	padding: 1em;
+	font-family: "source_sans_proregular", sans-serif;
+  font-size: x-large;
 }
